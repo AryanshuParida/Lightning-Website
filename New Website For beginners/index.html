@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighting Website</title>
+    <!-- Below is the link for the attachments of the goofle font -->
+    <link rel="shortcut icon" href="./images/lamp.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+        <!-- Images for the webpage-->
+        <img src="images/menu.png" class="menu-img"> 
+        <img src="images/logo.png" class="logo"> 
+        <!-- ul = unordered list for making the list items in the nav bar -->
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UCOc7eOaxp8VkPhysni75qlg/about">About me</a></li>
+            <li><a href="https://github.com/AryanshuParida">My Github</a></li>
+            <li><a href="https://www.youtube.com/channel/UCOc7eOaxp8VkPhysni75qlg/playlist">Playlist</a></li>
+            <li>Click the button For the magic</li>
+        </ul>
+        <!-- Button for the Lightning  -->
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-container">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light" id="light">
+        </div>
+        <!-- Right side Text -->
+        <div class="text-container">
+            <h1>Latest in ligthing</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi suscipit nam tenetur veritatis totam beatae, quasi enim autem odio, blanditiis nobis error sunt nihil quidem voluptatibus doloremque ex dolorum necessitatibus quis quaerat!</p>
+            <a href="https://www.youtube.com/channel/UCOc7eOaxp8VkPhysni75qlg/videos">Check all my videos</a>
+        </div>
+    </div>
+    <!-- Starting the javascript -->
+    <script>
+        var btn = document.getElementById("btn");
+        var light= document.getElementById("light");
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on")
+        }
+    </script>
+</body>
+</html>
